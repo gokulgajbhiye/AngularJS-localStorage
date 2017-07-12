@@ -1,0 +1,29 @@
+{
+  "name": "ScrollToFixed",
+  "homepage": "http://bigspotteddog.github.io/ScrollToFixed/",
+  "description": "jQuery plugin used to fix elements on the page (top, bottom, anywhere); however, it still allows the element to continue to move left or right with the horizontal scroll.",
+  "main": "jquery-scrolltofixed.js",
+  "dependencies": {
+    "jquery": ">=1.6"
+  },
+  "keywords": [
+    "jQuery",
+    "scroll",
+    "fixed"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "bower_components",
+    "tests",
+    "test*.html"
+  ],
+  "_release": "ab10cfd47d",
+  "_resolution": {
+    "type": "commit",
+    "commit": "ab10cfd47d32ae01f512b5d93f187c66bd207bbd"
+  },
+  "_source": "git://github.com/AyogoHealth/ScrollToFixed.git",
+  "_target": "ab10cfd47d32ae01f512b5d93f187c66bd207bbd",
+  "_originalSource": "git://github.com/AyogoHealth/ScrollToFixed.git"
+}

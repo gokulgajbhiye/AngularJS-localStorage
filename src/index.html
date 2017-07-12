@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="caEWT">
+  <head>
+    <meta charset="utf-8">
+    <meta name='viewport' content='initial-scale=1, maximum-scale=1'>
+    <title translate="app.title"></title>    
+    <link rel="stylesheet" type="text/css" href="css/main.css" />
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!-- compiled CSS -->
+    <% styles.forEach( function ( file ) { %>
+    <link rel="stylesheet" type="text/css" href="<%= file %>" /><% }); %>
+    <!-- compiled JavaScript -->
+    <% scripts.forEach( function ( file ) { %>
+    <script type="text/javascript" src="<%= file %>"></script><% }); %>
+  </head>
+  <body ng-controller="addTaskController">
+  <div class="container">
+    <div class="row">
+    <div class="col-md-12">
+        <div>
+            <h3 style="margin-top: 25px;">Add your task details:</h3>
+            <form class="form-horizontal" style="margin-top: 15px;">
+              <div class="form-group">                        
+                <div class="col-sm-8">
+                  <input type="text" ng-model="taskName" class="form-control" placeholder="Task ID">                        
+                </div>
+              </div>
+              <div class="form-group">
+                <div class="col-sm-8">
+                  <input type="text" ng-model="taskTitle" class="form-control" placeholder="Task Title">
+                </div>
+              </div>
+              <div class="form-group">                        
+                <div class="col-sm-8">
+                  <input type="text" ng-model="taskProject" class="form-control" placeholder="Project Name">
+                </div>
+              </div>                      
+              <div class="form-group">
+                <div class="col-sm-8">
+                  <button type="button" ng-click="addTask()" class="btn btn-warning ewt-btn-style">Submit</button>
+                </div>
+              </div>
+            </form> 
+            <!-- Task list details in data table -->
+            <table datatable="ng" dt-options="dtOptions" class="table table-hover">
+                <thead>
+                    <tr>
+                        <th>Task Ticket ID</th>
+                        <th>Title</th>
+                        <th>Project Name</th>
+                        <th>Status</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr ng-repeat="t in taskLists track by $index">
+                        <td>{{t.id}}</td>
+                        <td>{{t.title}}</td>
+                        <td>{{t.project}}</td>
+                        <td>
+                          <a type="button" class="btn btn-success">Start</a>&nbsp;&nbsp;&nbsp;
+                          <a type="button" class="btn btn-warning">End</a>
+                        </td>
+                    </tr>
+                </tbody>
+              </table>  
+          </div>      
+    </div>
+      
+    </div>
+  </div>
+  
+      <script type="text/javascript" src="src/app/app.js"></script>
+      <script type="text/javascript" src="templates-bootstrap.js"></script>       
+  </body>
+</html>

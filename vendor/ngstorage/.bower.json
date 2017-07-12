@@ -1,0 +1,30 @@
+{
+  "name": "ngstorage",
+  "main": "./ngStorage.js",
+  "keywords": [
+    "angular",
+    "cookie",
+    "storage",
+    "local",
+    "localstorage",
+    "session",
+    "sessionstorage"
+  ],
+  "dependencies": {
+    "angular": ">=1.0.8"
+  },
+  "devDependencies": {
+    "angular-mocks": ">=1.0.8",
+    "chai": "~1.8.1"
+  },
+  "homepage": "https://github.com/AyogoHealth/ngStorage",
+  "_release": "f4e8fc2a00",
+  "_resolution": {
+    "type": "branch",
+    "branch": "patch-2",
+    "commit": "f4e8fc2a00066a0bc71aa37eb570a12567e3f346"
+  },
+  "_source": "git://github.com/AyogoHealth/ngStorage.git",
+  "_target": "patch-2",
+  "_originalSource": "git://github.com/AyogoHealth/ngStorage.git"
+}
